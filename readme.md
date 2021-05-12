@@ -88,7 +88,7 @@ url: "https://[your-user].github.io/"
 
 ## Serve the radar with Docker
 ```
-docker-compose up
+docker run --rm --volume="$PWD:/srv/jekyll" --volume="$PWD/bundle:/usr/local/bundle" --env JEKYLL_ENV=development -p 4000:4000 jekyll/jekyll jekyll serve
 ```
 
 ## Docker build image

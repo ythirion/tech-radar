@@ -10,7 +10,7 @@
       </div>
       <div class="column text-right">
         <a
-          href="{{ site.baseurl }}/{{page.category | downcase}}/"
+          href="{{ site.baseurl }}{{page.category | downcase}}/"
           class="btn bg-gradient-main-color fa-arrow-left left link-homepage"
           >Back to {{ page.category }}</a
         >
@@ -20,7 +20,6 @@
     <div class="grid-flex">
       <div class="column w-25"><img src="{{page.image}}" /></div>
       <div class="column">{{ content }}</div>
-      {% include share.html name=page.name content=page.content filename=page.filename category=page.category %}
     </div>
   </div>
 </main>
